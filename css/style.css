@@ -1,4 +1,35 @@
-p{
-    color: blue
-    ;
+#one{
+    color: violet;
 }
+
+#two{
+    color: indigo;
+}
+
+#three{
+    color: blue;
+}
+
+#four{
+    color: green;
+}
+
+#five{
+    color: yellow;
+}
+#six{
+    color: orange;
+}
+#seven{
+    color: red;
+}
+#box{
+    background-color: blue;
+}
+/* .heading{
+    color: red;
+} */
+h1,h2,h3{
+    color: red;
+}
+
