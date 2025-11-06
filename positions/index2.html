@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position Properties Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 2000px;
+      padding-bottom: 60px;
+    }
+    .container {
+      width: 90vw;
+      margin: 30px auto;
+      padding: 16px;
+      border: 2px dashed #bbb;
+      background: #fafafa;
+      position: relative;
+      min-height: 600px;
+      /* To demonstrate absolute/relative easily */
+    }
+    .box {
+      width: 200px;
+      height: 80px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 7px #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15em;
+      font-weight: bold;
+    }
+    .static {
+      background: #e3f2fd;
+      border: 2px solid #2196f3;
+      position: static;
+    }
+    .relative {
+      background: #e8f5e9;
+      border: 2px solid #43a047;
+      position: relative;
+      left: 30px; /* Demo movement */
+      top: 10px;
+    }
+    .absolute {
+      background: #fff3e0;
+      border: 2px solid #ff9800;
+      position: absolute; /* Placed in the .container */
+      left: 400px;
+      top: 150px;
+      z-index: 2;
+    }
+    .fixed {
+      background: #fff8e1;
+      border: 2px solid #ffd600;
+      position: fixed;
+      left: 25px;
+      bottom: 25px;
+      z-index: 3;
+    }
+    .sticky {
+      background: #fce4ec;
+      border: 2px solid #d81b60;
+      position: sticky;
+      top: 0;  /* Sticks at top of .container */
+    }
+    h1, h2 {
+      margin-top: 0;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <h1>Demonstration of All CSS Position Properties</h1>
+  <div class="container">
+    <div class="box static"></div>
+    <div class="box relative"></div>
+    <div class="box absolute"></div>
+    <div class="box sticky"></div>
+  </div>
+  <div class="box fixed">position: fixed (bottom: 25px, left: 25px)</div>
+  
+</body>
+</html>
