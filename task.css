@@ -1,0 +1,7 @@
+.padded {
+    padding: 50px 30px 50px 80px;
+    background-color: cyan;
+    border: 1px solid #ddd;
+    /* max-width: 600px; */
+    margin: 20px;
+}
