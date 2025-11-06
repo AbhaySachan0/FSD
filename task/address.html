@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f2f2f2;
+    }
+
+    .parent {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .left, .right {
+      flex: 1;
+    }
+
+    .left {
+      background-color: #e9e9e9;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .left h3 {
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      margin: 5px 0;
+    }
+
+    .right {
+      color: black;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .right label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .right input, .right textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: black;
+    }
+
+    .right textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .right button {
+      background-color: black;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .right button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <!-- Left Div -->
+    <div class="left">
+      <h3>Contact Details</h3>
+      <p><strong>Address:</strong> 123 Main Street, City</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> info@example.com</p>
+    </div>
+
+    <!-- Right Div -->
+    <div class="right">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

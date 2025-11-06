@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE11 Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    nav .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Blocks */
+    .block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+    }
+
+    .block:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    .text {
+      flex: 1;
+      padding: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #333;
+    }
+    @media (max-width: 768px) {
+      .block {
+        flex-direction: column;
+      }
+      .text, .image {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">CSE11</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="block">
+    <div class="text">
+      <h2>Welcome to Block 1</h2>
+      <p>
+        This block has text on the left and an image on the right.  
+        You can customize this section with any content.
+      </p>
+    </div>
+    <div class="image">
+      <img src="ing.png" alt="Block 1 Image">
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="image">
+      <img src="ing.png" alt="Block 2 Image">
+    </div>
+    <div class="text">
+      <h2>Welcome to Block 2</h2>
+      <p>
+        This block flips the layout — image on the left and text on the right.  
+        Perfect for alternating content sections.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
