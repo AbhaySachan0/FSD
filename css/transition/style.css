@@ -1,0 +1,26 @@
+.rainbow-box {
+  width: 100px;
+  height: 50px; /* initial height */
+  background: linear-gradient(
+    90deg,
+    red, orange, yellow, green, blue, indigo, violet
+  );
+  background-size: 700% 700%;
+  transition: height 1.5s ease; /* smooth height change */
+}
+
+/* On hover: height increases and background animates */
+.rainbow-box:hover {
+  height: 100px;
+  animation: rainbowShift 3s linear infinite;
+}
+
+/* Rainbow color animation - shifts background position */
+@keyframes rainbowShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
