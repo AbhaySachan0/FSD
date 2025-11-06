@@ -1,3 +1,9 @@
+*{
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+}
+
 #one{
     color: violet;
 }
@@ -26,12 +32,12 @@
 #box{
     background-color: blue;
 }
-/* .heading{
+.heading{
     color: red;
 } */
-/* h1,h2,h3{
+h1,h2,h3{
     color: red;
-} */
+}
 
 #button1{
     color: white;
@@ -47,10 +53,20 @@
     background-color: #2fee6c;
 }
 
+
 #main-heading{
     color: orange;
 }
 .featured{
     color: green;
 }
+
+img[alt]{
+    color: white;
+}
+
+input[type=hello]{
+    color: blue;;
+}
+
 
